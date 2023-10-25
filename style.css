@@ -277,14 +277,10 @@ button.active {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
-    pointer-events: none; /* Assurez-vous que le tooltip n'interfère pas avec les interactions de la carte. */
+    pointer-events: none; 
 }
 .highlighted {
-    stroke-width: 2; /* Augmente l'épaisseur du contour */
-}
-#map-container {
-    flex: 1; /* La carte prendra autant d'espace que possible à gauche. */
-    max-width: 800px;
+    stroke-width: 2;
 }
 
 .table-container {
@@ -299,7 +295,4 @@ button.active {
     max-width: 800px;
     margin: 0 auto;
 }
-#population-map-container{
-    flex: 1; /* La carte prendra autant d'espace que possible à gauche. */
-    max-width: 800px;
-}
+
