@@ -292,3 +292,14 @@ button.active {
     justify-content: center;
     align-items: center;
 }
+
+#population-map-container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#population-map-container{
+    flex: 1; /* La carte prendra autant d'espace que possible à gauche. */
+    max-width: 800px;
+}

@@ -338,3 +338,75 @@ fetch("projection.json")
     tooltip.style("display", "none");
   }
   
+
+  // population
+// Population
+const populationWidth = 800;
+const populationHeight = 600;
+
+const populationSvg = d3.select("#population-map").attr("width", populationWidth).attr("height", populationHeight);
+const populationProjection = d3
+  .geoConicConformal()
+  .center([2.454071, 46.279229])
+  .scale(2600)
+  .translate([populationWidth / 2, populationHeight / 2]);
+const populationPath = d3.geoPath().projection(populationProjection);
+let populationData = {};
+
+// Sélectionnez le tooltip pour la population
+const populationTooltip = d3.select("#population-tooltip");
+
+// Chargez le fichier GeoJSON
+d3.json("carte.geojson").then(function (geojson) {
+  // Chargez le fichier population.json
+  d3.json("population.json").then(function (populationJson) {
+    // Créez un dictionnaire pour mapper les codes de région aux données de population
+    const regionToPopulation = {};
+    populationJson.forEach((regionDataItem) => {
+      regionToPopulation[regionDataItem.code_region] = regionDataItem.population;
+    });
+
+    // Créez une échelle de couleurs pour la population (vous pouvez personnaliser les couleurs)
+    const populationColorScale = d3.scaleSequential(d3.interpolateBlues)
+      .domain([
+        d3.min(populationJson, d => d.population),
+        d3.max(populationJson, d => d.population)
+      ]);
+
+    populationSvg
+      .selectAll("path")
+      .data(geojson.features)
+      .enter()
+      .append("path")
+      .attr("d", populationPath)
+      .attr("stroke", "black")
+      .attr("stroke-width", 0.5)
+      .attr("fill", d => populationColorScale(regionToPopulation[d.properties.code_region]))
+      .on("mouseover", function (event, d) {
+        d3.select(this).classed("highlighted", true);
+        const population = regionToPopulation[d.properties.code_region];
+        showPopulationData(d.properties.region, population, event);
+      })
+      .on("mouseout", function () {
+        d3.select(this).classed("highlighted", false);
+        hidePopulationData();
+      });
+  });
+});
+
+function showPopulationData(region, population, event) {
+  populationTooltip.style("display", "block");
+  populationTooltip.html(
+    `<strong>Région : </strong>${region}<br>` +
+    `<strong>Population : </strong>${population}`
+  );
+
+  const [x, y] = d3.pointer(event, d3.select("#population-map-container").node());
+
+  populationTooltip.style("left", x + "px");
+  populationTooltip.style("top", y + "px");
+}
+
+function hidePopulationData() {
+  populationTooltip.style("display", "none");
+}

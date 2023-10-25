@@ -1,0 +1,62 @@
+[
+    {
+        "region": "ILE DE FRANCE",
+        "code_region": "11",
+        "population": 12358932
+    },
+    {
+        "region": "CENTRE VAL DE LOIRE",
+        "code_region": "24",
+        "population": 2572278
+    },
+    {
+        "region": "BOURGOGNE FRANCHE COMTÉ",
+        "code_region": "27",
+        "population": 2786296
+    },
+    {
+        "region": "NORMANDIE",
+        "code_region": "28",
+        "population": 3317023
+    },
+    {
+        "region": "HAUTS DE FRANCE",
+        "code_region": "32",
+        "population": 5980697
+    },
+    {
+        "region": "GRAND-EST",
+        "code_region": "44",
+        "population": 5562262
+    },
+    {
+        "region": "PAYS DE LA LOIRE",
+        "code_region": "52",
+        "population": 3907426
+    },
+    {
+        "region": "BRETAGNE",
+        "code_region": "53",
+        "population": 3429882
+    },
+    {
+        "region": "NOUVELLE-AQUITAINE",
+        "code_region": "75",
+        "population": 6110365
+    },
+    {
+        "region": "OCCITANIE",
+        "code_region": "76",
+        "population": 6101005
+    },
+    {
+        "region": "AUVERGNE RHONE ALPES",
+        "code_region": "84",
+        "population": 8197325
+    },
+    {
+        "region": "PROVENCE ALPES COTE D AZUR",
+        "code_region": "93",
+        "population": 5160091
+    }
+]
