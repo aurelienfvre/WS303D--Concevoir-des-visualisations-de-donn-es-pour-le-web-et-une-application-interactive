@@ -1,0 +1,66 @@
+[
+  {
+    "annee": "2020",
+    "mois": [
+      { "mois": "Janvier", "valeur": 10954 },
+      { "mois": "Février", "valeur": 9452 },
+      { "mois": "Mars", "valeur": 5510 },
+      { "mois": "Avril", "valeur": 1218 },
+      { "mois": "Mai", "valeur": 4111 },
+      { "mois": "Juin", "valeur": 13727 },
+      { "mois": "Juillet", "valeur": 9941 },
+      { "mois": "Août", "valeur": 5591 },
+      { "mois": "Septembre", "valeur": 10015 },
+      { "mois": "Octobre", "valeur": 10045 },
+      { "mois": "Novembre", "valeur": 9601 },
+      { "mois": "Décembre", "valeur": 20734 }
+    ]
+  },
+  {
+    "annee": "2021",
+    "mois": [
+      { "mois": "Janvier", "valeur": 6469 },
+      { "mois": "Février", "valeur": 8425 },
+      { "mois": "Mars", "valeur": 15592 },
+      { "mois": "Avril", "valeur": 9598 },
+      { "mois": "Mai", "valeur": 11555 },
+      { "mois": "Juin", "valeur": 20862 },
+      { "mois": "Juillet", "valeur": 7524 },
+      { "mois": "Août", "valeur": 9911 },
+      { "mois": "Septembre", "valeur": 16990 },
+      { "mois": "Octobre", "valeur": 15582 },
+      { "mois": "Novembre", "valeur": 16420 },
+      { "mois": "Décembre", "valeur": 23168 }
+    ]
+  },
+  {
+    "annee": "2022",
+    "mois": [
+      { "mois": "Janvier", "valeur": 10217 },
+      { "mois": "Février", "valeur": 13454 },
+      { "mois": "Mars", "valeur": 19835 },
+      { "mois": "Avril", "valeur": 12692 },
+      { "mois": "Mai", "valeur": 15246 },
+      { "mois": "Juin", "valeur": 21900 },
+      { "mois": "Juillet", "valeur": 12812 },
+      { "mois": "Août", "valeur": 12326 },
+      { "mois": "Septembre", "valeur": 22483 },
+      { "mois": "Octobre", "valeur": 16866 },
+      { "mois": "Novembre", "valeur": 20303 },
+      { "mois": "Décembre", "valeur": 24987 }
+    ]
+  },
+  {
+    "annee": "2023",
+    "mois": [
+      { "mois": "Janvier", "valeur": 14649 },
+      { "mois": "Février", "valeur": 19598 },
+      { "mois": "Mars", "valeur": 30637 },
+      { "mois": "Avril", "valeur": 16433 },
+      { "mois": "Mai", "valeur": 23417 },
+      { "mois": "Juin", "valeur": 33343 },
+      { "mois": "Juillet", "valeur": 16896 },
+      { "mois": "Août", "valeur": 19657 }
+    ]
+  }
+]

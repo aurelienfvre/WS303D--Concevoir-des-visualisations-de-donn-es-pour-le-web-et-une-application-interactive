@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* presentation */
+.presentation{
+    width: 55%;
+    text-align: justify;
+    margin: 40px auto;
+}
+/* navbar */
+
+/* Style de base pour la barre de navigation */
+.navbar {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Pour centrer verticalement */
+    height: 40px;
+}
+
+/* Style pour la liste des catégories */
+.categories {
+    list-style: none;
+    display: flex;
+    gap: 5px; /* Ajoute un petit espace horizontal entre les éléments */
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Pour centrer verticalement */
+}
+
+/* Style pour les liens des catégories et les séparateurs */
+.categories a, .categories .separator {
+    color: #2e89ba;
+    text-decoration: none;
+    position: relative;   
+}
+
+
+/* Style pour la catégorie active (soulignée) */
+.categories .active {
+    border-bottom: 2px solid #217eb8; /* Ajoute un soulignement avec une bordure en bas */
+}
+
+/* Effet d'hover sur les liens des catégories */
+.categories a:hover {
+    border-bottom: 2px solid #217eb8; /* Ajoute un soulignement avec une bordure en bas en survol */
+}
+
+
+
+
+
+/* premier graph */
+.container__bar {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.chart-container__bar {
+    width: 50%;
+    margin-top: 40px;
+}
+
+.data-container__bar {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.chart-description__bar{
+    margin-bottom: 10px;
+}
+
+/* titre et label */
+.titre {
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #aedfbc, #67bcc6, #217eb8 );
+    background-size: 300% 300%;
+    -webkit-animation: gradient 4s alternate infinite;
+    animation: gradient 4s alternate infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.graph-label {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    
+}
+/* premier tableau */
+.data-table__bar {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #93d4c1;
+    height: 33vh;
+}
+
+.table-header__bar {
+    color: black;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
+
+.data-table__bar th,
+.data-table__bar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
+
+.table-total__bar {
+    color: black;
+    font-weight: bold;
+}
+
+/* deuxieme graph */
+.container__line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart-container__line {
+    width: 65%; /* Réduit la largeur du graphique à 80% */
+}
+
+.data-container__line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: justify;
+}
+
+.chart-description__line {
+    margin-bottom: 25px;
+}
+
+
+/* deuxieme tableau */
+
+.data-table__line{
+    width: 70%;
+    border-collapse: collapse;
+    border: 2px solid #93d4c1;
+    height: 33vh;
+}
+
+.data-table__line th,
+.data-table__line td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
+
+
+/* deuxieme tableau */
+
+.data-table__line1{
+    width: 70%;
+    border-collapse: collapse;
+    border: 2px solid #93d4c1;
+    height: 33vh;
+}
+
+.data-table__line1 th,
+.data-table__line1 td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
+
+/* Carte */
+/* Centrer l'iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Réduire la taille de l'iframe */
+iframe {
+    max-width: 80%; /* 80% de la largeur disponible */
+    height: auto;   /* Ajuster la hauteur en conséquence */
+}
+
+/* tableau map */
+.table-map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.data-table__map{
+    width: 70%;
+    border-collapse: collapse;
+    border: 2px solid #93d4c1;
+    height: 33vh;
+}
+
+.data-table__map th,
+.data-table__map td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
+
+/* quatrième graphique */
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+button {
+    background-color: transparent; /* Couleur de fond */
+    color: #2e89ba; /* Couleur du texte */
+    padding: 10px 40px; /* Rembourrage intérieur */
+    border: 1px solid #2e89ba; /* Bordure du bouton */
+    border-radius: 20px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de la main au survol */
+    margin: 5px; /* Marge entre les boutons */
+}
+
+/* Style au survol des boutons */
+button:hover {
+    background-color: #2e89ba; /* Couleur de fond au survol */
+    color: white;
+}
+
+/* Style pour le bouton actif (celui qui est sélectionné) */
+button.active {
+    background-color: #2e89ba; /* Couleur de fond du bouton actif */
+    color: white;
+}
+
+/* puissance */
+
+#map-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    pointer-events: none; /* Assurez-vous que le tooltip n'interfère pas avec les interactions de la carte. */
+}
+.highlighted {
+    stroke-width: 2; /* Augmente l'épaisseur du contour */
+}
+#map-container {
+    flex: 1; /* La carte prendra autant d'espace que possible à gauche. */
+    max-width: 800px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

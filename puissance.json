@@ -1,0 +1,74 @@
+[
+    {
+      "region": "ILE DE FRANCE",
+      "code_region": "11",
+      "puissance_installee_moyenne_par_point_de_charge": 23.01371699669967,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 36
+    },
+    {
+      "region": "CENTRE VAL DE LOIRE",
+      "code_region": "24",
+      "puissance_installee_moyenne_par_point_de_charge": 41.57983923528134,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 32
+    },
+    {
+      "region": "BOURGOGNE FRANCHE COMTE",
+      "code_region": "27",
+      "puissance_installee_moyenne_par_point_de_charge": 50.98908685968819,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 37
+    },
+    {
+      "region": "NORMANDIE",
+      "code_region": "28",
+      "puissance_installee_moyenne_par_point_de_charge": 33.166339548577035,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 42
+    },
+    {
+      "region": "HAUTS DE FRANCE",
+      "code_region": "32",
+      "puissance_installee_moyenne_par_point_de_charge": 37.40438267221264,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 58
+    },
+    {
+      "region": "GRAND-EST",
+      "code_region": "44",
+      "puissance_installee_moyenne_par_point_de_charge": 37.87313934504946,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 48
+    },
+    {
+      "region": "PAYS DE LA LOIRE",
+      "code_region": "52",
+      "puissance_installee_moyenne_par_point_de_charge": 37.2768192048012,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 38
+    },
+    {
+      "region": "BRETAGNE",
+      "code_region": "53",
+      "puissance_installee_moyenne_par_point_de_charge": 31.182435392028033,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 40
+    },
+    {
+      "region": "NOUVELLE-AQUITAINE",
+      "code_region": "75",
+      "puissance_installee_moyenne_par_point_de_charge": 38.179782838474104,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 54
+    },
+    {
+      "region": "OCCITANIE",
+      "code_region": "76",
+      "puissance_installee_moyenne_par_point_de_charge": 36.89195055204303,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 50
+    },
+    {
+      "region": "AUVERGNE RHONE ALPES",
+      "code_region": "84",
+      "puissance_installee_moyenne_par_point_de_charge": 39.25379543014875,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 40
+    },
+    {
+      "region": "PROVENCE ALPES COTE D AZUR",
+      "code_region": "93",
+      "puissance_installee_moyenne_par_point_de_charge": 33.19742002063983,
+      "evolution_sur_12_mois_de_la_puissance_installee_moyenne_par_point_de_charge": 47
+    }
+  ]

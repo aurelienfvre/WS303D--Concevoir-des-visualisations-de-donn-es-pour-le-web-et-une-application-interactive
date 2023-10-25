@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sae 303D Dataviz | Fevre Khiev Truchy</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="categories">
+                <li><a href="#">Accueil</a></li>
+                <li><span class="separator">/</span></li>
+                <li><a href="#">Voitures</a></li>
+                <li><span class="separator">/</span></li>
+                <li><a href="#" class="active">Statistiques</a></li>
+            </ul>
+        </nav>
+        <p class="presentation">Notre sujet se concentre sur les véhicules électriques. Le secteur des transports est
+            responsable de 38% des émissions de CO2. Le gouvernement s'engage à mettre fin à la vente de véhicules à
+            énergies fossiles d'ici 2040. Depuis 2020, les ventes de véhicules électriques ont explosé, avec une
+            augmentation de 128% en 2020 et de 63% en 2021. Notre projet se penche sur cette transition cruciale.</p>
+    </header>
+
+    <section id="annee">
+        <h2 class="titre">
+            Évolution du nombre de voitures électriques par année en France
+        </h2>
+        <div class="container__line">
+            <div class="chart-container__line">
+                <canvas id="linechart2"></canvas>
+                <div id="button-container">
+                    <button id="button-2020" class="active" data-year="2020">2020</button>
+                    <button id="button-2021" data-year="2021">2021</button>
+                    <button id="button-2022" data-year="2022">2022</button>
+                    <button id="button-2023" data-year="2023">2023</button>
+                </div>
+
+                <p class="graph-label">
+                    Graphique créé en Chart.js à partir des données PFA<a href="https://pfa-auto.fr/marche-automobile/"
+                        title="source">[source]</a>
+                </p>
+            </div>
+
+            <div class="data-container__line">
+                <p class="chart-description__line">L'augmentation du nombre de voitures électriques en France est un
+                    indicateur clé de la demande croissante pour les infrastructures de recharge. Plus de voitures
+                    électriques signifient généralement plus de bornes de recharge pour répondre à cette demande. Cela
+                    dit, la croissance exacte du nombre d'infrastructures de recharge dépendra des investissements, des
+                    politiques gouvernementales et des tendances du marché. La tendance actuelle indique une
+                    augmentation constante, ce qui devrait entraîner une expansion continue des infrastructures de
+                    recharge en France.</p>
+
+                <table class="data-table__line">
+                    <tbody>
+                        <tr class="table-header__line">
+                            <th>Année</th>
+                            <th>Nombre de voitures électriques</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="iframe-section">
+        <h2 class="titre">
+            Nombre de points de charge ouvert pour 100 000 habitants
+        </h2>
+        <div class="iframe-container">
+            <div style="min-width:500px">
+                <script defer src="https://datawrapper.dwcdn.net/dbv6g/embed.js?v=6">
+                </script><noscript><img src="https://datawrapper.dwcdn.net/dbv6g/full.png"
+                        alt="carte de la france"></noscript>
+            </div>
+        </div>
+        <div class="table-map">
+            <table class="data-table__map">
+                <tbody>
+                    <tr class="table-header__map">
+                        <th>Région</th>
+                        <th>Nombre de points de charge</th>
+                        <th>Evolution sur 12 mois (%)</th>
+                    </tr>
+                    <tr>
+                        <td>BOURGOGNE FRANCHE COMTE</td>
+                        <td>160</td>
+                        <td>65.0</td>
+                    </tr>
+                    <tr>
+                        <td>NORMANDIE</td>
+                        <td>183</td>
+                        <td>60.0</td>
+                    </tr>
+                    <tr>
+                        <td>OCCITANIE</td>
+                        <td>178</td>
+                        <td>48.0</td>
+                    </tr>
+                    <tr>
+                        <td>BRETAGNE</td>
+                        <td>136</td>
+                        <td>32.0</td>
+                    </tr>
+                    <tr>
+                        <td>NOUVELLE AQUITAINE</td>
+                        <td>173</td>
+                        <td>46.0</td>
+                    </tr>
+                    <tr>
+                        <td>AUVERGNE RHONE ALPES</td>
+                        <td>162</td>
+                        <td>50.0</td>
+                    </tr>
+                    <tr>
+                        <td>GRAND EST</td>
+                        <td>187</td>
+                        <td>72.0</td>
+                    </tr>
+                    <tr>
+                        <td>HAUTS DE FRANCE</td>
+                        <td>164</td>
+                        <td>58.0</td>
+                    </tr>
+                    <tr>
+                        <td>CENTRE VAL DE LOIRE</td>
+                        <td>178</td>
+                        <td>59.0</td>
+                    </tr>
+                    <tr>
+                        <td>ILE DE FRANCE</td>
+                        <td>158</td>
+                        <td>49.0</td>
+                    </tr>
+                    <tr>
+                        <td>PAYS DE LA LOIRE</td>
+                        <td>140</td>
+                        <td>54.0</td>
+                    </tr>
+                    <tr>
+                        <td>PROVENCE ALPES COTE D AZUR</td>
+                        <td>190</td>
+                        <td>53.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="puissance">
+        <div id="map-container">
+            <svg id="map"></svg>
+            <div class="tooltip" id="tooltip">
+                <strong>Région : </strong><span id="regionName"></span><br>
+                <strong>Puissance installée moyenne : </strong><span id="puissanceMoyenne"></span><br>
+                <strong>Évolution sur 12 mois : </strong><span id="evolution12Mois"></span>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="data-table__map">
+                <tbody>
+                    <tr class="table-header__map">
+                        <th>Région</th>
+                        <th>Nombre de points de charge</th>
+                        <th>Evolution sur 12 mois (%)</th>
+                    </tr>
+                    <tr>
+                        <td>ILE DE FRANCE</td>
+                        <td>23.01 kVA</td>
+                        <td>36%</td>
+                    </tr>
+                    <tr>
+                        <td>CENTRE VAL DE LOIRE</td>
+                        <td>41.58 kVA</td>
+                        <td>32%</td>
+                    </tr>
+                    <tr>
+                        <td>BOURGOGNE FRANCHE COMTE</td>
+                        <td>50.99 kVA</td>
+                        <td>37%</td>
+                    </tr>
+                    <tr>
+                        <td>NORMANDIE</td>
+                        <td>33.17 kVA</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr>
+                        <td>HAUTS DE FRANCE</td>
+                        <td>37.40 kVA</td>
+                        <td>58%</td>
+                    </tr>
+                    <tr>
+                        <td>GRAND-EST</td>
+                        <td>37.87 kVA</td>
+                        <td>48%</td>
+                    </tr>
+                    <tr>
+                        <td>PAYS DE LA LOIRE</td>
+                        <td>37.28 kVA</td>
+                        <td>38%</td>
+                    </tr>
+                    <tr>
+                        <td>BRETAGNE</td>
+                        <td>31.18 kVA</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>NOUVELLE-AQUITAINE</td>
+                        <td>38.18 kVA</td>
+                        <td>54%</td>
+                    </tr>
+                    <tr>
+                        <td>OCCITANIE</td>
+                        <td>36.89 kVA</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>AUVERGNE RHONE ALPES</td>
+                        <td>39.25 kVA</td>
+                        <td>40%</td>
+                    </tr>
+                    <tr>
+                        <td>PROVENCE ALPES COTE D AZUR</td>
+                        <td>33.20 kVA</td>
+                        <td>47%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+    </section>
+
+    <section id="trajectoire">
+        <h2 class="titre">
+            Trajectoire des points de charge ouverts au public à horizon 2030
+        </h2>
+        <div class="container__line">
+            <div class="chart-container__line">
+                <canvas id="linechart"></canvas>
+                <p class="graph-label">
+                    Graphique créé en Chart.js à partir des données Enedis<a
+                        href="https://data.enedis.fr/pages/points-de-charge/" title="source">[source]</a>
+                </p>
+            </div>
+
+            <div class="data-container__line">
+                <p class="chart-description__line">Ce graphique présente trois trajectoires (des scénarios réalisé, bas,
+                    médian et haut) pour le nombre de points de charge ouverts au public à horizon 2030. Ces
+                    trajectoires sont basées sur des scénarios prospectifs de développement des ventes des véhicules
+                    électriques et hybrides rechargeables, issus d’une analyse interne prenant en compte des
+                    déterminants nationaux et locaux. Ces scénarios ont été élaborés à la fin de l’année 2020, d'où un
+                    léger décalage entre le réalisé et les valeurs des différents scénarios en 2023. Le nombre de points
+                    de charge a en effet évolué moins vite que prévu.</p>
+
+                <table class="data-table__line1">
+                    <tbody>
+                        <tr class="table-header__line1">
+                            <th>Année</th>
+                            <th>Réalisé</th>
+                            <th>Scénario Bas</th>
+                            <th>Scénario Médian</th>
+                            <th>Scénario Haut</th>
+                        </tr>
+                        <tr>
+                            <td>2015</td>
+                            <td>11,113</td>
+                            <td>10,000</td>
+                            <td>12,000</td>
+                            <td>15,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016</td>
+                            <td>16,220</td>
+                            <td>11,000</td>
+                            <td>14,000</td>
+                            <td>16,000</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td>19,309</td>
+                            <td>12,000</td>
+                            <td>16,000</td>
+                            <td>18,000</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>26,254</td>
+                            <td>13,000</td>
+                            <td>18,000</td>
+                            <td>20,000</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>30,203</td>
+                            <td>14,000</td>
+                            <td>20,000</td>
+                            <td>22,000</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>34,686</td>
+                            <td>15,000</td>
+                            <td>22,000</td>
+                            <td>24,000</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>53,667</td>
+                            <td>16,000</td>
+                            <td>24,000</td>
+                            <td>26,000</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>82,107</td>
+                            <td>100,410</td>
+                            <td>101,272</td>
+                            <td>100,438</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>109,856</td>
+                            <td>128,691</td>
+                            <td>129,879</td>
+                            <td>139,153</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td></td>
+                            <td>168,944</td>
+                            <td>180,232</td>
+                            <td>192,776</td>
+                        </tr>
+                        <tr>
+                            <td>2025</td>
+                            <td></td>
+                            <td>222,551</td>
+                            <td>253,095</td>
+                            <td>272,177</td>
+                        </tr>
+                        <tr>
+                            <td>2026</td>
+                            <td></td>
+                            <td>288,966</td>
+                            <td>345,462</td>
+                            <td>374,506</td>
+                        </tr>
+                        <tr>
+                            <td>2027</td>
+                            <td></td>
+                            <td>365,428</td>
+                            <td>452,825</td>
+                            <td>495,320</td>
+                        </tr>
+                        <tr>
+                            <td>2028</td>
+                            <td></td>
+                            <td>449,174</td>
+                            <td>573,522</td>
+                            <td>633,423</td>
+                        </tr>
+                        <tr>
+                            <td>2029</td>
+                            <td></td>
+                            <td>540,056</td>
+                            <td>704,085</td>
+                            <td>785,659</td>
+                        </tr>
+                        <tr>
+                            <td>2030</td>
+                            <td></td>
+                            <td>636,154</td>
+                            <td>841,989</td>
+                            <td>949,969</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="repartition">
+        <h2 class="titre">
+            Répartition des infrastructures de recharge en France
+        </h2>
+        <div class="container__bar">
+            <div class="chart-container__bar">
+                <canvas id="barchart"></canvas>
+                <p class="graph-label">
+                    Graphique créé en Chart.js à partir des données UFE <a
+                        href="https://ufe-electricite.fr/watt-the-carte/deploiement-bornes-de-recharge-en-france/dans-les-territoires/"
+                        title="source">[source]</a>
+                </p>
+            </div>
+
+            <div class="data-container__bar">
+                <p class="chart-description__bar">Ce graphique révèle la distribution des infrastructures de recharge en
+                    France, qu'elles soient situées en milieu rural, urbain ou en agglomérations.</p>
+
+                <table class="data-table__bar">
+                    <tbody>
+                        <tr class="table-header__bar">
+                            <th>Emplacement</th>
+                            <th>Nombre d'infrastructures de recharge</th>
+                        </tr>
+                        <tr>
+                            <td>Rural</td>
+                            <td>18 681</td>
+                        </tr>
+                        <tr>
+                            <td>Agglomérations</td>
+                            <td>32 747</td>
+                        </tr>
+                        <tr>
+                            <td>Urbain</td>
+                            <td>30 438</td>
+                        </tr>
+                        <tr class="table-total__bar">
+                            <th>TOTAL</th>
+                            <th>81 866</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
