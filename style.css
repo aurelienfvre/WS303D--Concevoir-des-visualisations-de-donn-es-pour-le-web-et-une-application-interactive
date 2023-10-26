@@ -315,3 +315,26 @@ th{
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+.table-map_pop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.data-table__map_pop{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #93d4c1;
+    height: 33vh;
+    margin-bottom: 70px;
+}
+
+.data-table__map_pop th,
+.data-table__map_pop td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #93d4c1;
+}
