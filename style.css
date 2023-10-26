@@ -296,3 +296,9 @@ button.active {
     margin: 0 auto;
 }
 
+.auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

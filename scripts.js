@@ -385,7 +385,7 @@ d3.json("carte.geojson").then(function (geojson) {
       .on("mouseover", function (event, d) {
         d3.select(this).classed("highlighted", true);
         const population = regionToPopulation[d.properties.code_region];
-        showPopulationData(d.properties.region, population, event);
+        showPopulationData(d.properties.region, population.toLocaleString(), event);
       })
       .on("mouseout", function () {
         d3.select(this).classed("highlighted", false);
