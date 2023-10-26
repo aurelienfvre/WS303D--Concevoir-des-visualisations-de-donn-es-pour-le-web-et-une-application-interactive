@@ -106,30 +106,7 @@ fetch("annee.json")
     console.error("Erreur de chargement des données JSON", error)
   );
 
-// Charger les données JSON
-$.getJSON("annee.json", function (data) {
-  var tableBody = $("table.data-table__line tbody");
 
-  // Parcourir les données et les insérer dans le tableau
-  for (var i = 0; i < data.length; i++) {
-    var anneeData = data[i];
-    var annee = anneeData.annee;
-
-    // Créer une nouvelle ligne pour le tableau
-    var newRow = $("<tr>");
-    newRow.append("<td>" + annee + "</td>");
-
-    // Le nombre de voitures électriques est la somme des valeurs de chaque mois de cette année
-    var nombreVoituresElectriques = 0;
-    for (var j = 0; j < anneeData.mois.length; j++) {
-      nombreVoituresElectriques += anneeData.mois[j].valeur;
-    }
-    newRow.append("<td>" + nombreVoituresElectriques + "</td>");
-
-    // Ajouter la nouvelle ligne au tableau
-    tableBody.append(newRow);
-  }
-});
 // Utilisez fetch pour charger le JSON
 fetch("secteur.json")
   .then((response) => response.json())
@@ -358,19 +335,19 @@ const populationTooltip = d3.select("#population-tooltip");
 
 // Chargez le fichier GeoJSON
 d3.json("carte.geojson").then(function (geojson) {
-  // Chargez le fichier population.json
-  d3.json("population.json").then(function (populationJson) {
-    // Créez un dictionnaire pour mapper les codes de région aux données de population
+  // Chargez le fichier juin-20.json
+  d3.json("juin-20.json").then(function (populationJson) {
+    // Créez un dictionnaire pour mapper les codes de région aux données de nombre de points de charge accessibles au public
     const regionToPopulation = {};
     populationJson.forEach((regionDataItem) => {
-      regionToPopulation[regionDataItem.code_region] = regionDataItem.population;
+      regionToPopulation[regionDataItem.code_region] = regionDataItem.nombre_de_points_de_charge_accessibles_au_public;
     });
 
-    // Créez une échelle de couleurs pour la population (vous pouvez personnaliser les couleurs)
+    // Créez une échelle de couleurs pour le nombre de points de charge accessibles au public (vous pouvez personnaliser les couleurs)
     const populationColorScale = d3.scaleSequential(d3.interpolateBlues)
       .domain([
-        d3.min(populationJson, d => d.population),
-        d3.max(populationJson, d => d.population)
+        d3.min(populationJson, d => regionToPopulation[d.code_region]),
+        d3.max(populationJson, d => regionToPopulation[d.code_region])
       ]);
 
     populationSvg
@@ -385,7 +362,7 @@ d3.json("carte.geojson").then(function (geojson) {
       .on("mouseover", function (event, d) {
         d3.select(this).classed("highlighted", true);
         const population = regionToPopulation[d.properties.code_region];
-        showPopulationData(d.properties.region, population.toLocaleString(), event);
+        showPopulationData(d.properties.region, population, event);
       })
       .on("mouseout", function () {
         d3.select(this).classed("highlighted", false);
@@ -398,7 +375,7 @@ function showPopulationData(region, population, event) {
   populationTooltip.style("display", "block");
   populationTooltip.html(
     `<strong>Région : </strong>${region}<br>` +
-    `<strong>Population : </strong>${population}`
+    `<strong>Points de charge : </strong>${population}`
   );
 
   const [x, y] = d3.pointer(event, d3.select("#population-map-container").node());

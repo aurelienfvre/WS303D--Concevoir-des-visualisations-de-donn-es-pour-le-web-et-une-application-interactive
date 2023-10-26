@@ -1,0 +1,63 @@
+[
+    {
+      "region": "ILE DE FRANCE",
+      "code_region": "11",
+      "nombre_de_points_de_charge_accessibles_au_public": 8000
+    },
+    {
+      "region": "CENTRE VAL DE LOIRE",
+      "code_region": "24",
+      "nombre_de_points_de_charge_accessibles_au_public": 1823
+    },
+    {
+      "region": "BOURGOGNE FRANCHE COMTÉ",
+      "code_region": "27",
+      "nombre_de_points_de_charge_accessibles_au_public": 1708
+    },
+    {
+      "region": "NORMANDIE",
+      "code_region": "28",
+      "nombre_de_points_de_charge_accessibles_au_public": 2408
+    },
+    {
+      "region": "HAUTS DE FRANCE",
+      "code_region": "32",
+      "nombre_de_points_de_charge_accessibles_au_public": 3917
+    },
+    {
+      "region": "GRAND-EST",
+      "code_region": "44",
+      "nombre_de_points_de_charge_accessibles_au_public": 2986
+    },
+    {
+      "region": "PAYS DE LA LOIRE",
+      "code_region": "52",
+      "nombre_de_points_de_charge_accessibles_au_public": 1945
+    },
+    {
+      "region": "BRETAGNE",
+      "code_region": "53",
+      "nombre_de_points_de_charge_accessibles_au_public": 1991
+    },
+    {
+      "region": "NOUVELLE-AQUITAINE",
+      "code_region": "75",
+      "nombre_de_points_de_charge_accessibles_au_public": 3879
+    },
+    {
+      "region": "OCCITANIE",
+      "code_region": "76",
+      "nombre_de_points_de_charge_accessibles_au_public": 5918
+    },
+    {
+      "region": "AUVERGNE RHONE ALPES",
+      "code_region": "84",
+      "nombre_de_points_de_charge_accessibles_au_public": 4366
+    },
+    {
+      "region": "PROVENCE ALPES COTE D AZUR",
+      "code_region": "93",
+      "nombre_de_points_de_charge_accessibles_au_public": 3660
+    }
+  ]
+  

@@ -2,85 +2,61 @@
     {
         "region": "ILE DE FRANCE",
         "code_region": "11",
-        "population": 12358932,
-        "LAT": 48.6443057,
-        "LON": 2.7537863
+        "population": 12358932
     },
     {
         "region": "CENTRE VAL DE LOIRE",
         "code_region": "24",
-        "population": 2572278,
-        "LAT": 47.5490251,
-        "LON": 1.7324062
+        "population": 2572278
     },
     {
         "region": "BOURGOGNE FRANCHE COMTÉ",
         "code_region": "27",
-        "population": 2786296,
-        "LAT": 47.0510946,
-        "LON": 5.0740568
+        "population": 2786296
     },
     {
         "region": "NORMANDIE",
         "code_region": "28",
-        "population": 3317023,
-        "LAT": 49.0677708,
-        "LON": 0.3138532
+        "population": 3317023
     },
     {
         "region": "HAUTS DE FRANCE",
         "code_region": "32",
-        "population": 5980697,
-        "LAT": 50.1024606,
-        "LON": 2.7247515
+        "population": 5980697
     },
     {
         "region": "GRAND-EST",
         "code_region": "44",
-        "population": 5562262,
-        "LAT": 48.4845157,
-        "LON": 6.113035
+        "population": 5562262
     },
     {
         "region": "PAYS DE LA LOIRE",
         "code_region": "52",
-        "population": 3907426,
-        "LAT": 47.6594864,
-        "LON": -0.8186143
+        "population": 3907426
     },
     {
         "region": "BRETAGNE",
         "code_region": "53",
-        "population": 3429882,
-        "LAT": 48.2640845,
-        "LON": -2.9202408
+        "population": 3429882
     },
     {
         "region": "NOUVELLE-AQUITAINE",
         "code_region": "75",
-        "population": 6110365,
-        "LAT": 45.4039367,
-        "LON": 0.3756199
+        "population": 6110365
     },
     {
         "region": "OCCITANIE",
         "code_region": "76",
-        "population": 6101005,
-        "LAT": 43.6487851,
-        "LON": 2.3435684
+        "population": 6101005
     },
     {
         "region": "AUVERGNE RHONE ALPES",
         "code_region": "84",
-        "population": 8197325,
-        "LAT": 45.2968119,
-        "LON": 4.6604809
+        "population": 8197325
     },
     {
         "region": "PROVENCE ALPES COTE D AZUR",
         "code_region": "93",
-        "population": 5160091,
-        "LAT": 44.0580563,
-        "LON": 6.0638506
+        "population": 5160091
     }
 ]

@@ -1,6 +1,6 @@
 {
     "data": {
-        "labels": ["Rural","Agglomerations", "Urbain"],
+        "labels": ["Rural","Urbain","Agglomeration"],
         "datasets": [
             {
                 "label": "Total",

@@ -338,3 +338,22 @@ th{
     text-align: center;
     border: 1px solid #93d4c1;
 }
+
+.titre2{
+    font-size: 35px;
+    width: 80%;
+    margin-top: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, #aedfbc, #67bcc6, #217eb8 );
+    background-size: 300% 300%;
+    -webkit-animation: gradient 4s alternate infinite;
+    animation: gradient 4s alternate infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.titre-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

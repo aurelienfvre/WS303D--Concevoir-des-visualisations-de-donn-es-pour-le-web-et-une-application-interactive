@@ -61,7 +61,23 @@
                     <tbody>
                         <tr class="table-header__line">
                             <th>Année</th>
-                            <th>Nombre de voitures électriques</th>
+                            <th>Nombre de voitures électriques en France</th>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>110912</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>162106</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>203121</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>204843</td>
                         </tr>
                     </tbody>
                 </table>
@@ -73,13 +89,20 @@
         <h2 class="titre">
             Nombre de points de charge ouvert pour 100 000 habitants
         </h2>
-        <div class="iframe-container">
-            <div style="min-width:500px">
-                <script defer src="https://datawrapper.dwcdn.net/dbv6g/embed.js?v=6">
-                </script><noscript><img src="https://datawrapper.dwcdn.net/dbv6g/full.png"
-                        alt="carte de la france"></noscript>
-            </div>
+        <div id="button-container">
+            <button id="button-2020" data-year="2020">2020</button>
+            <button id="button-2021" data-year="2021">2021</button>
+            <button id="button-2022" data-year="2022">2022</button>
+            <button id="button-2023" data-year="2023">2023</button>
         </div>
+        <div id="population-map-container">
+            <svg id="population-map"></svg>
+            <svg id="population-map2"></svg>
+            <svg id="population-map3"></svg>
+            <svg id="population-map4"></svg>
+            <div id="population-tooltip"></div>
+        </div>
+
         <div class="table-map">
             <table class="data-table__map">
                 <tbody>
@@ -160,7 +183,7 @@
 
     <section class="puissance">
         <h2 class="titre">
-            Puissance moyenne des points de charge par région
+            Puissance moyenne par point de charge accessible au public par région
         </h2>
         <div id="map-container">
             <svg id="map"></svg>
@@ -404,9 +427,11 @@
     </section>
 
     <section class="autoroutes">
-        <h2 class="titre">
-            Évolution du déploiement des bornes de recharge sur autoroutes
-        </h2>
+        <div class="titre-auto">
+            <h2 class="titre2">
+                Pourcentage d'aires de services autoroutières équipées de bornes de recharge en 2023
+            </h2>
+        </div>
         <div class="auto">
             <img src="autoroute.webp" alt="carte des autoroutes" class="img-auto">
             <p class="graph-label">
@@ -428,8 +453,7 @@
                 <strong>Population : </strong><span id="populationPopulation"></span>
             </div>
             <p class="graph-label">
-                Graphique créé en D3.js à partir des données Insee<a
-                    href="https://www.insee.fr/fr/statistiques/1893198"
+                Graphique créé en D3.js à partir des données Insee<a href="https://www.insee.fr/fr/statistiques/1893198"
                     title="source">[source]</a>
             </p>
             <div class="table-container">
@@ -438,98 +462,84 @@
                         <tr class="table-header__map_pop">
                             <th>Région</th>
                             <th>Nombre de points de charge</th>
-                            <th>Evolution sur 12 mois (%)</th>
                             <th>Nombre d'habitants</th>
                         </tr>
                         <tr>
                             <td>BOURGOGNE FRANCHE COMTE</td>
                             <td>160</td>
-                            <td>65.0</td>
                             <td>2 786 296</td>
                         </tr>
                         <tr>
                             <td>NORMANDIE</td>
                             <td>183</td>
-                            <td>60.0</td>
                             <td>3 317 023</td>
                         </tr>
                         <tr>
                             <td>OCCITANIE</td>
                             <td>178</td>
-                            <td>48.0</td>
                             <td>6 101 005</td>
                         </tr>
                         <tr>
                             <td>BRETAGNE</td>
                             <td>136</td>
-                            <td>32.0</td>
                             <td>3 429 882</td>
                         </tr>
                         <tr>
                             <td>NOUVELLE AQUITAINE</td>
                             <td>173</td>
-                            <td>46.0</td>
                             <td>6 110 365</td>
                         </tr>
                         <tr>
                             <td>AUVERGNE RHONE ALPES</td>
                             <td>162</td>
-                            <td>50.0</td>
                             <td>8 197 325</td>
                         </tr>
                         <tr>
                             <td>GRAND EST</td>
                             <td>187</td>
-                            <td>72.0</td>
                             <td>5 562 262</td>
                         </tr>
                         <tr>
                             <td>HAUTS DE FRANCE</td>
                             <td>164</td>
-                            <td>58.0</td>
                             <td>5 980 697</td>
                         </tr>
                         <tr>
                             <td>CENTRE VAL DE LOIRE</td>
                             <td>178</td>
-                            <td>59.0</td>
                             <td>2 572 278</td>
                         </tr>
                         <tr>
                             <td>ILE DE FRANCE</td>
                             <td>158</td>
-                            <td>49.0</td>
                             <td>12 358 932</td>
                         </tr>
                         <tr>
                             <td>PAYS DE LA LOIRE</td>
                             <td>140</td>
-                            <td>54.0</td>
                             <td>3 907 426</td>
                         </tr>
                         <tr>
                             <td>PROVENCE ALPES COTE D AZUR</td>
                             <td>190</td>
-                            <td>53.0</td>
                             <td>5 160 091</td>
                         </tr>
                         <!-- Ligne Total -->
                         <tr>
                             <td><strong>Total</strong></td>
                             <td id="totalChargePoints"><strong>1931</strong></td>
-                            <td id="totalChargeEvolution"><strong>599.0</strong></td>
                             <td id="totalPopulation"><strong>56 171 316</strong></td>
                         </tr>
                     </tbody>
                 </table>
-                
+
             </div>
         </div>
     </section>
 
     <section id="repartition">
         <h2 class="titre">
-            Répartition des infrastructures de recharge en France
+            Répartition des infrastructures de recharge par type de zone en France
         </h2>
         <div class="container__bar">
             <div class="chart-container__bar">
@@ -556,7 +566,7 @@
                             <td>18 681</td>
                         </tr>
                         <tr>
-                            <td>Agglomérations</td>
+                            <td>Agglomération</td>
                             <td>32 747</td>
                         </tr>
                         <tr>
@@ -571,6 +581,45 @@
                 </table>
             </div>
         </div>
+    </section>
+
+    <section class="recommandations">
+        <h2 class="titre">
+            Recommandations
+        </h2>
+        <p class="chart-description__line">
+            Pour assurer une répartition plus équitable des infrastructures de recharge pour les véhicules électriques,
+            il est essentiel de mettre en place des stratégies adaptées aux besoins spécifiques de chaque région. Il est
+            essentiel d’identifier les zones nécessitant des bornes de recharge.
+        </p>
+        <p class="chart-description__line">
+            Focalisez l'installation de bornes rapides le long des autoroutes et des routes fréquentées pour faciliter
+            les déplacements longue distance en véhicules électriques.
+        </p>
+        <p class="chart-description__line">
+            L'implication active des communautés locales dans la prise de décision sur les emplacements des bornes est
+            cruciale pour garantir leur acceptation sociale. Des campagnes de sensibilisation peuvent également jouer un
+            rôle essentiel en éduquant le public sur les avantages des véhicules électriques et en informant sur
+            l'emplacement des bornes de recharge.
+        </p>
+        <p class="chart-description__line">
+            Il est nécessaire de surveiller régulièrement l'utilisation des bornes, d'analyser les tendances et
+            d'ajuster leur emplacement en fonction des besoins changeants de la population et du trafic. Établir des
+            normes garantissant l'interopérabilité des stations de recharge contribuera à leur adoption généralisée.
+        </p>
+    </section>
+
+    <section class="conclusion">
+        <h2 class="titre">
+            Conclusion
+        </h2>
+        <p class="chart-description__line">
+            Pour conclure, il existe des avantages et des inconvénients à choisir un véhicule électrique. Dans le cas de
+            Monsieur X, la situation est plutôt favorable en raison de sa résidence dans le Grand-Est. Cependant, ses
+            déplacements en Île-de-France se révèlent plus complexes en raison du nombre limité d'infrastructures de
+            recharge par rapport à la densité de population. Heureusement, l'autoroute qu’il emprunte est parfaitement
+            desservie, ce qui facilite ses déplacements.
+        </p>
     </section>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
