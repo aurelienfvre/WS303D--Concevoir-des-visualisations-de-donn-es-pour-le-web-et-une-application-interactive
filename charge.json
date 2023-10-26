@@ -1,0 +1,74 @@
+[
+    {
+      "region": "ILE DE FRANCE",
+      "code_region": "11",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 158,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 49
+    },
+    {
+      "region": "CENTRE VAL DE LOIRE",
+      "code_region": "24",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 178,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 59
+    },
+    {
+      "region": "BOURGOGNE FRANCHE COMTE",
+      "code_region": "27",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 160,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 65
+    },
+    {
+      "region": "NORMANDIE",
+      "code_region": "28",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 183,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 60
+    },
+    {
+      "region": "HAUTS DE FRANCE",
+      "code_region": "32",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 164,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 58
+    },
+    {
+      "region": "GRAND EST",
+      "code_region": "44",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 187,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 72
+    },
+    {
+      "region": "PAYS DE LA LOIRE",
+      "code_region": "52",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 140,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 54
+    },
+    {
+      "region": "BRETAGNE",
+      "code_region": "53",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 136,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 32
+    },
+    {
+      "region": "NOUVELLE AQUITAINE",
+      "code_region": "75",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 173,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 46
+    },
+    {
+      "region": "OCCITANIE",
+      "code_region": "76",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 178,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 48
+    },
+    {
+      "region": "AUVERGNE RHONE ALPES",
+      "code_region": "84",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 162,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 50
+    },
+    {
+      "region": "PROVENCE ALPES COTE D AZUR",
+      "code_region": "93",
+      "nombre_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 190,
+      "evolution_sur_12_mois_de_la_densite_de_points_de_charge_accessibles_au_public_pour_100_000_habitants": 53
+    }
+  ]

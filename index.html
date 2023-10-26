@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -148,6 +148,11 @@
                         <td>190</td>
                         <td>53.0</td>
                     </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="totalChargePoints">1931</td>
+                        <td id="totalChargeEvolution">599.0</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -164,6 +169,11 @@
                 <strong>Puissance installée moyenne : </strong><span id="puissanceMoyenne"></span><br>
                 <strong>Évolution sur 12 mois : </strong><span id="evolution12Mois"></span>
             </div>
+            <p class="graph-label">
+                Graphique créé en D3.js à partir des données Enedis<a
+                    href="https://data.enedis.fr/pages/points-de-charges-electriques-contenu/"
+                    title="source">[source]</a>
+            </p>
         </div>
         <div class="table-container">
             <table class="data-table__map">
@@ -233,10 +243,14 @@
                         <td>33.20 kVA</td>
                         <td>47%</td>
                     </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td id="totalChargePoints">452.62 kVA</td>
+                        <td id="totalChargeEvolution">525%</td>
+                    </tr>
                 </tbody>
             </table>
-
-
+        </div>
     </section>
 
     <section id="trajectoire">
@@ -395,6 +409,11 @@
         </h2>
         <div class="auto">
             <img src="autoroute.webp" alt="carte des autoroutes" class="img-auto">
+            <p class="graph-label">
+                Image des données de UFE<a
+                    href="https://ufe-electricite.fr/watt-the-carte/deploiement-bornes-de-recharge-en-france/sur-autoroutes/"
+                    title="source">[source]</a>
+            </p>
         </div>
     </section>
 
@@ -408,6 +427,11 @@
                 <strong>Région : </strong><span id="population-regionName"></span><br>
                 <strong>Population : </strong><span id="populationPopulation"></span>
             </div>
+            <p class="graph-label">
+                Graphique créé en D3.js à partir des données Insee<a
+                    href="https://www.insee.fr/fr/statistiques/1893198"
+                    title="source">[source]</a>
+            </p>
             <div class="table-container">
                 <table class="data-table__map">
                     <tbody>
@@ -463,10 +487,14 @@
                             <td>PROVENCE ALPES COTE D AZUR</td>
                             <td>5 160 091</td>
                         </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td id="totalPopulation">56 171 316</td>
+                        </tr>
                     </tbody>
                 </table>
-
             </div>
+        </div>
     </section>
 
     <section id="repartition">
