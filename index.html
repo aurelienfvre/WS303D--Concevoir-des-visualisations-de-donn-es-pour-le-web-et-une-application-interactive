@@ -87,113 +87,151 @@
 
     <section class="iframe-section">
         <h2 class="titre">
-            Nombre des bornes de recharge par région le mois de Juin ( 2020 - 2023 )
+            Nombre des bornes de recharge par région le mois de Juin (2020 - 2023)
         </h2>
-            <div id="population-map-container1">
-                <svg id="population-map"></svg>
-                <div class="tooltip" id="tooltip1">
-                    <strong>Région : </strong><span id="region"></span><br>
-                    <strong>Point de charge : </strong><span id="pointdecharge"></span><br>
-                </div>
-            </div>
-            <div id="population-map-container2">
-                <svg id="population-map2"></svg>
-                <div class="tooltip" id="tooltip2">
-                    <strong>Région : </strong><span id="region2"></span><br>
-                    <strong>Point de charge : </strong><span id="pointdecharge2"></span><br>
-                </div>
-            </div>
-            <div id="population-map-container3">
-                <svg id="population-map3"></svg>
-                <div class="tooltip" id="tooltip3">
-                    <strong>Région : </strong><span id="region3"></span><br>
-                    <strong>Point de charge : </strong><span id="pointdecharge3"></span><br>
-                </div>
-            </div>
-            <div id="population-map-container4">
-                <svg id="population-map4"></svg>
-                <div class="tooltip" id="tooltip4">
-                    <strong>Région : </strong><span id="region4"></span><br>
-                    <strong>Point de charge : </strong><span id="pointdecharge4"></span><br>
+
+        <div class="map-container">
+            <div class="map2020">
+                <div style="min-height:556px">
+                    <script defer src="https://datawrapper.dwcdn.net/oPsmX/embed.js?v=4"></script>
+                    <noscript><img src="https://datawrapper.dwcdn.net/oPsmX/full.png" alt="map2020"></noscript>
                 </div>
             </div>
 
+            <div class="map2021">
+                <div style="min-height:484px">
+                    <script defer src="https://datawrapper.dwcdn.net/ebsIm/embed.js?v=1"></script>
+                    <noscript><img src="https://datawrapper.dwcdn.net/ebsIm/full.png" alt="map2021"></noscript>
+                </div>
+            </div>
+        </div>
 
+        <div class="map-container">
+            <div class="map2022">
+                <div style="min-height:484px">
+                    <script defer src="https://datawrapper.dwcdn.net/7EZuE/embed.js?v=1"></script>
+                    <noscript><img src="https://datawrapper.dwcdn.net/7EZuE/full.png" alt="map2022"></noscript>
+                </div>
+            </div>
+
+            <div class="map2023">
+                <div style="min-height:484px">
+                    <script defer src="https://datawrapper.dwcdn.net/ISGbI/embed.js?v=1"></script>
+                    <noscript><img src="https://datawrapper.dwcdn.net/ISGbI/full.png" alt="map2023"></noscript>
+                </div>
+            </div>
+        </div>
+        <div class="label">
+            <p class="graph-label">
+                Graphique créé avec DattaWrapper à partir des données Ined<a
+                    href="https://www.ined.fr/fr/tout-savoir-population/chiffres/france/structure-population/regions/"
+                    title="source">[source]</a>
+            </p>
+        </div>
         <div class="table-map">
             <table class="data-table__map">
                 <tbody>
                     <tr class="table-header__map">
                         <th>Région</th>
-                        <th>Nombre de points de charge</th>
-                        <th>Evolution sur 12 mois (%)</th>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2022</th>
+                        <th>2023</th>
                     </tr>
                     <tr>
-                        <td>BOURGOGNE FRANCHE COMTE</td>
-                        <td>160</td>
-                        <td>65.0</td>
+                        <td>Bourgogne Franche Comté</td>
+                        <td>1301</td>
+                        <td>1708</td>
+                        <td>2425</td>
+                        <td>3615</td>
                     </tr>
                     <tr>
-                        <td>NORMANDIE</td>
-                        <td>183</td>
-                        <td>60.0</td>
+                        <td>Normandie</td>
+                        <td>2314</td>
+                        <td>2408</td>
+                        <td>3224</td>
+                        <td>5317</td>
                     </tr>
                     <tr>
-                        <td>OCCITANIE</td>
-                        <td>178</td>
-                        <td>48.0</td>
+                        <td>Occitanie</td>
+                        <td>3677</td>
+                        <td>5918</td>
+                        <td>7652</td>
+                        <td>11038</td>
                     </tr>
                     <tr>
-                        <td>BRETAGNE</td>
-                        <td>136</td>
-                        <td>32.0</td>
+                        <td>Bretagne</td>
+                        <td>1821</td>
+                        <td>1991</td>
+                        <td>2660</td>
+                        <td>3992</td>
                     </tr>
                     <tr>
-                        <td>NOUVELLE AQUITAINE</td>
-                        <td>173</td>
-                        <td>46.0</td>
+                        <td>Nouvelle Aquitaine</td>
+                        <td>3504</td>
+                        <td>3879</td>
+                        <td>5870</td>
+                        <td>8648</td>
                     </tr>
                     <tr>
-                        <td>AUVERGNE RHONE ALPES</td>
-                        <td>162</td>
-                        <td>50.0</td>
+                        <td>Auvergne Rhone Alpes</td>
+                        <td>3656</td>
+                        <td>4366</td>
+                        <td>6718</td>
+                        <td>9958</td>
                     </tr>
                     <tr>
-                        <td>GRAND EST</td>
-                        <td>187</td>
-                        <td>72.0</td>
+                        <td>Grand Est</td>
+                        <td>2306</td>
+                        <td>2986</td>
+                        <td>4571</td>
+                        <td>8249</td>
                     </tr>
                     <tr>
-                        <td>HAUTS DE FRANCE</td>
-                        <td>164</td>
-                        <td>58.0</td>
+                        <td>Hauts de France</td>
+                        <td>3227</td>
+                        <td>3917</td>
+                        <td>5562</td>
+                        <td>8842</td>
                     </tr>
                     <tr>
-                        <td>CENTRE VAL DE LOIRE</td>
-                        <td>178</td>
-                        <td>59.0</td>
+                        <td>Centre Val de Loire</td>
+                        <td>1571</td>
+                        <td>1823</td>
+                        <td>2299</td>
+                        <td>3722</td>
                     </tr>
                     <tr>
-                        <td>ILE DE FRANCE</td>
-                        <td>158</td>
-                        <td>49.0</td>
+                        <td>Ile de France</td>
+                        <td>4769</td>
+                        <td>8000</td>
+                        <td>12312</td>
+                        <td>18597</td>
                     </tr>
                     <tr>
-                        <td>PAYS DE LA LOIRE</td>
-                        <td>140</td>
-                        <td>54.0</td>
+                        <td>Pays de la Loire</td>
+                        <td>1559</td>
+                        <td>1945</td>
+                        <td>2612</td>
+                        <td>4304</td>
                     </tr>
                     <tr>
-                        <td>PROVENCE ALPES COTE D AZUR</td>
-                        <td>190</td>
-                        <td>53.0</td>
+                        <td>Provence Alpes Cote D'Azur</td>
+                        <td>2542</td>
+                        <td>3660</td>
+                        <td>5031</td>
+                        <td>7695</td>
                     </tr>
                     <tr>
-                        <td><strong>Total</strong></td>
-                        <td id="totalChargePoints"><strong>1931</strong></td>
-                        <td id="totalChargeEvolution"><strong>599.0</strong></td>
+                        <td><strong>TOTAL</strong></td>
+                        <td id="totalChargePoints1"><strong>12537</strong></td>
+                        <td id="totalChargePoints2"><strong>16845</strong></td>
+                        <td id="totalChargePoints3"><strong>23833</strong></td>
+                        <td id="totalChargePoints4"><strong>34906</strong></td>
                     </tr>
                 </tbody>
             </table>
+
         </div>
     </section>
 
@@ -225,72 +263,73 @@
                         <th>Evolution sur 12 mois (%)</th>
                     </tr>
                     <tr>
-                        <td>ILE DE FRANCE</td>
+                        <td>Ile de France</td>
                         <td>23.01 kVA</td>
                         <td>36%</td>
                     </tr>
                     <tr>
-                        <td>CENTRE VAL DE LOIRE</td>
+                        <td>Centre Val de Loire</td>
                         <td>41.58 kVA</td>
                         <td>32%</td>
                     </tr>
                     <tr>
-                        <td>BOURGOGNE FRANCHE COMTE</td>
+                        <td>Bourgogne Franche Comté</td>
                         <td>50.99 kVA</td>
                         <td>37%</td>
                     </tr>
                     <tr>
-                        <td>NORMANDIE</td>
+                        <td>Normandie</td>
                         <td>33.17 kVA</td>
                         <td>42%</td>
                     </tr>
                     <tr>
-                        <td>HAUTS DE FRANCE</td>
+                        <td>Hauts de France</td>
                         <td>37.40 kVA</td>
                         <td>58%</td>
                     </tr>
                     <tr>
-                        <td>GRAND-EST</td>
+                        <td>Grand Est</td>
                         <td>37.87 kVA</td>
                         <td>48%</td>
                     </tr>
                     <tr>
-                        <td>PAYS DE LA LOIRE</td>
+                        <td>Pays de la Loire</td>
                         <td>37.28 kVA</td>
                         <td>38%</td>
                     </tr>
                     <tr>
-                        <td>BRETAGNE</td>
+                        <td>Bretagne</td>
                         <td>31.18 kVA</td>
                         <td>40%</td>
                     </tr>
                     <tr>
-                        <td>NOUVELLE-AQUITAINE</td>
+                        <td>Nouvelle Aquitaine</td>
                         <td>38.18 kVA</td>
                         <td>54%</td>
                     </tr>
                     <tr>
-                        <td>OCCITANIE</td>
+                        <td>Occitanie</td>
                         <td>36.89 kVA</td>
                         <td>50%</td>
                     </tr>
                     <tr>
-                        <td>AUVERGNE RHONE ALPES</td>
+                        <td>Auvergne Rhone Alpes</td>
                         <td>39.25 kVA</td>
                         <td>40%</td>
                     </tr>
                     <tr>
-                        <td>PROVENCE ALPES COTE D AZUR</td>
+                        <td>Provence Alpes Cote D'Azur</td>
                         <td>33.20 kVA</td>
                         <td>47%</td>
                     </tr>
                     <tr>
-                        <td><strong>Total</strong></td>
+                        <td><strong>TOTAL</strong></td>
                         <td><strong>452.62 kVA</strong></td>
                         <td><strong>525%</strong></td>
                     </tr>
                 </tbody>
             </table>
+
         </div>
     </section>
 
@@ -477,9 +516,11 @@
             <p class="graph-label">
                 Graphique créé sur flourish<a
                     href="https://flourish-user-preview.com/15510175/ofxSvI79j27l19fwyReL-UoQN5zzFEojKm2eL9oXajT81OJ2Ke3n4FSnVWiawmu8/"
-                    title="source">[pour qu'il soit interactif]</a> à partir des données UFE<a
+                    title="source">[pour qu'il soit interactif]</a> à partir des données UFE et Ined<a
                     href="https://ufe-electricite.fr/watt-the-carte/deploiement-bornes-de-recharge-en-france/dans-les-territoires/?mid=1688083200"
-                    title="source">[source]</a>
+                    title="source">[source]</a><a
+                    href="https://www.ined.fr/fr/tout-savoir-population/chiffres/france/structure-population/regions/"
+                    title="source">[source2]</a>
             </p>
             <p class="presentation2">
                 Cette carte met en évidence une corrélation significative entre la densité de population dans chaque
@@ -497,68 +538,68 @@
                             <th>Nombre d'habitants</th>
                         </tr>
                         <tr>
-                            <td>BOURGOGNE FRANCHE COMTE</td>
+                            <td>Bourgogne Franche Comté</td>
                             <td>3 615</td>
                             <td>2 786 296</td>
                         </tr>
                         <tr>
-                            <td>NORMANDIE</td>
+                            <td>Normandie</td>
                             <td>5 317</td>
                             <td>3 317 023</td>
                         </tr>
                         <tr>
-                            <td>OCCITANIE</td>
+                            <td>Occitanie</td>
                             <td>11 038</td>
                             <td>6 101 005</td>
                         </tr>
                         <tr>
-                            <td>BRETAGNE</td>
+                            <td>Bretagne</td>
                             <td>3 992</td>
                             <td>3 429 882</td>
                         </tr>
                         <tr>
-                            <td>NOUVELLE AQUITAINE</td>
+                            <td>Nouvelle Aquitaine</td>
                             <td>8 648</td>
                             <td>6 110 365</td>
                         </tr>
                         <tr>
-                            <td>AUVERGNE RHONE ALPES</td>
+                            <td>Auvergne Rhone Alpes</td>
                             <td>9 958</td>
                             <td>8 197 325</td>
                         </tr>
                         <tr>
-                            <td>GRAND EST</td>
+                            <td>Grand Est</td>
                             <td>8 949</td>
                             <td>5 562 262</td>
                         </tr>
                         <tr>
-                            <td>HAUTS DE FRANCE</td>
+                            <td>Hauts de France</td>
                             <td>8 842</td>
                             <td>5 980 697</td>
                         </tr>
                         <tr>
-                            <td>CENTRE VAL DE LOIRE</td>
+                            <td>Centre Val de Loire</td>
                             <td>3 722</td>
                             <td>2 572 278</td>
                         </tr>
                         <tr>
-                            <td>ILE DE FRANCE</td>
+                            <td>Ile de France</td>
                             <td>18 597</td>
                             <td>12 358 932</td>
                         </tr>
                         <tr>
-                            <td>PAYS DE LA LOIRE</td>
+                            <td>Pays de la Loire</td>
                             <td>4 304</td>
                             <td>3 907 426</td>
                         </tr>
                         <tr>
-                            <td>PROVENCE ALPES COTE D AZUR</td>
+                            <td>Provence Alpes Cote D'Azur</td>
                             <td>7 695</td>
                             <td>5 160 091</td>
                         </tr>
                         <!-- Ligne Total -->
                         <tr>
-                            <td><strong>Total</strong></td>
+                            <td><strong>TOTAL</strong></td>
                             <td><strong>85 346</strong></td>
                             <td><strong>56 171 316</strong></td>
                         </tr>
