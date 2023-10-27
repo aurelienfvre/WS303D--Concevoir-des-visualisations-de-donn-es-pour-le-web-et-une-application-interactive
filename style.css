@@ -341,7 +341,7 @@ th{
 
 .titre2{
     font-size: 35px;
-    width: 80%;
+    width: 78%;
     margin-top: 50px;
     text-align: center;
     background: linear-gradient(90deg, #aedfbc, #67bcc6, #217eb8 );
@@ -353,6 +353,41 @@ th{
     color: transparent;
 }
 .titre-auto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flourish{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flourish-map{
+    width: 100%;
+}
+
+.presentation2{
+    width: 100%;
+    text-align: justify;
+    margin: 40px auto;
+}
+
+#population-map-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#population-map-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#population-map-container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#population-map-container4{
     display: flex;
     justify-content: center;
     align-items: center;
